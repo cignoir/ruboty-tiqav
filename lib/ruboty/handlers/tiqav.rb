@@ -3,7 +3,7 @@ require 'tiqav'
 module Ruboty
   module Handlers
     class Tiqav < Base
-      on /tiqav( me)? ?(?<keyword>.+)?/, name: 'tiqav', description: 'Get tiqav image matching with the keyword'
+      on /(tiqav|img|image)( me)? ?(?<keyword>.+)?/, name: 'tiqav', description: 'Get tiqav image matching with the keyword'
 
       def tiqav(message = {})
         keyword = message[:keyword]
